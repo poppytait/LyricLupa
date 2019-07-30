@@ -11,14 +11,10 @@ import Avatar from '@material-ui/core/Avatar';
 const SearchResultsList = () => {
     return (
         <>
-            <Grid container spacing={2}>
-                <Grid item xs={12} md={6}>
-                    <Typography variant="h6">
-                        Avatar with text
+              <Typography variant="h6">
+                        Search Results List
               </Typography>
-
                     <List>
-                        {generate(
                             <ListItem>
                                 <ListItemAvatar>
                                     <Avatar>
@@ -26,14 +22,11 @@ const SearchResultsList = () => {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-
+                                    primary='Artist name'
+                                    secondary='Arist info'
                                 />
-                            </ListItem>,
-                        )}
+                            </ListItem>
                     </List>
-
-                </Grid>
-            </Grid>
         </>
     )
 }

@@ -5,14 +5,14 @@ import Toolbar from '@material-ui/core/Toolbar';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
 
-const SearchBar = () => {
+const SearchBar = (props) => {
     return (
         <>
             <AppBar position='static' color='white'>
                 <Toolbar>
                     <SearchIcon />
                     <InputBase
-                        placeholder="Search…"
+                        placeholder={props.placeholder}
                     />
                 </Toolbar>
             </AppBar>
