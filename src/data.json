@@ -1,0 +1,332 @@
+{
+    "message": {
+        "header": {
+            "status_code": 200,
+            "execute_time": 0.071698188781738,
+            "available": 1155
+        },
+        "body": {
+            "track_list": [
+                {
+                    "track": {
+                        "track_id": 141010260,
+                        "track_name": "My Type",
+                        "track_name_translation_list": [],
+                        "track_rating": 1,
+                        "commontrack_id": 78222526,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 27488154,
+                        "album_name": "Show Me Love",
+                        "artist_id": 34760905,
+                        "artist_name": "Maliah",
+                        "track_share_url": "https:\/\/www.musixmatch.com\/lyrics\/Maliah\/My-Type?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "track_edit_url": "https:\/\/www.musixmatch.com\/lyrics\/Maliah\/My-Type\/edit?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "restricted": 0,
+                        "updated_time": "2017-11-20T00:37:07Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 17,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Dance",
+                                        "music_genre_name_extended": "Dance",
+                                        "music_genre_vanity": "Dance"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 78776253,
+                        "track_name": "My Type",
+                        "track_name_translation_list": [],
+                        "track_rating": 1,
+                        "commontrack_id": 40892744,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 20274781,
+                        "album_name": "My Type",
+                        "artist_id": 27964364,
+                        "artist_name": "The Hotels",
+                        "track_share_url": "https:\/\/www.musixmatch.com\/lyrics\/The-Hotels\/My-Type?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "track_edit_url": "https:\/\/www.musixmatch.com\/lyrics\/The-Hotels\/My-Type\/edit?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "restricted": 0,
+                        "updated_time": "2014-10-28T00:53:46Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 14,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Pop",
+                                        "music_genre_name_extended": "Pop",
+                                        "music_genre_vanity": "Pop"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 84300006,
+                        "track_name": "My Type",
+                        "track_name_translation_list": [],
+                        "track_rating": 19,
+                        "commontrack_id": 52169611,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 20893283,
+                        "album_name": "Latin Royalty",
+                        "artist_id": 30458795,
+                        "artist_name": "GT Garza feat. Lucky Luciano",
+                        "track_share_url": "https:\/\/www.musixmatch.com\/lyrics\/GT-Garza-Lucky-Luciano\/My-Type?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "track_edit_url": "https:\/\/www.musixmatch.com\/lyrics\/GT-Garza-Lucky-Luciano\/My-Type\/edit?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "restricted": 0,
+                        "updated_time": "2016-01-18T02:41:46Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 1076,
+                                        "music_genre_parent_id": 18,
+                                        "music_genre_name": "Rap",
+                                        "music_genre_name_extended": "Hip Hop\/Rap \/ Rap",
+                                        "music_genre_vanity": "Hip-Hop-Rap-Rap"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 9907573,
+                        "track_name": "My Type",
+                        "track_name_translation_list": [],
+                        "track_rating": 1,
+                        "commontrack_id": 8325512,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 11067157,
+                        "album_name": "Ancient Lover",
+                        "artist_id": 219008,
+                        "artist_name": "Tigercity",
+                        "track_share_url": "https:\/\/www.musixmatch.com\/lyrics\/Tigercity\/My-Type?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "track_edit_url": "https:\/\/www.musixmatch.com\/lyrics\/Tigercity\/My-Type\/edit?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "restricted": 0,
+                        "updated_time": "2011-06-12T21:27:18Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 20,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Alternative",
+                                        "music_genre_name_extended": "Alternative",
+                                        "music_genre_vanity": "Alternative"
+                                    }
+                                },
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 7,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Electronic",
+                                        "music_genre_name_extended": "Electronic",
+                                        "music_genre_vanity": "Electronic"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 85968645,
+                        "track_name": "My Type",
+                        "track_name_translation_list": [],
+                        "track_rating": 1,
+                        "commontrack_id": 48381378,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 21006944,
+                        "album_name": "Pop Rnb Hits 2015",
+                        "artist_id": 28961559,
+                        "artist_name": "Dance Hits 2014",
+                        "track_share_url": "https:\/\/www.musixmatch.com\/lyrics\/Dance-Hits-2014\/My-Type?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "track_edit_url": "https:\/\/www.musixmatch.com\/lyrics\/Dance-Hits-2014\/My-Type\/edit?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "restricted": 0,
+                        "updated_time": "2015-12-18T04:02:24Z",
+                        "primary_genres": {
+                            "music_genre_list": []
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 42733690,
+                        "track_name": "That Is Just My Type",
+                        "track_name_translation_list": [],
+                        "track_rating": 5,
+                        "commontrack_id": 47450699,
+                        "instrumental": 0,
+                        "explicit": 1,
+                        "has_lyrics": 1,
+                        "has_subtitles": 1,
+                        "has_richsync": 0,
+                        "num_favourite": 4,
+                        "album_id": 16071158,
+                        "album_name": "With the Right Method",
+                        "artist_id": 1,
+                        "artist_name": "Various Artists",
+                        "track_share_url": "https:\/\/www.musixmatch.com\/lyrics\/Various-Artists\/That-Is-Just-My-Type?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "track_edit_url": "https:\/\/www.musixmatch.com\/lyrics\/Various-Artists\/That-Is-Just-My-Type\/edit?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "restricted": 0,
+                        "updated_time": "2015-12-07T02:49:49Z",
+                        "primary_genres": {
+                            "music_genre_list": []
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 116000454,
+                        "track_name": "My Type of Party",
+                        "track_name_translation_list": [],
+                        "track_rating": 15,
+                        "commontrack_id": 63972757,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 24086592,
+                        "album_name": "Squad Life",
+                        "artist_id": 24409593,
+                        "artist_name": "Fat Trel",
+                        "track_share_url": "https:\/\/www.musixmatch.com\/lyrics\/Fat-Trel\/My-Type-of-Party?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "track_edit_url": "https:\/\/www.musixmatch.com\/lyrics\/Fat-Trel\/My-Type-of-Party\/edit?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "restricted": 0,
+                        "updated_time": "2016-11-05T06:46:53Z",
+                        "primary_genres": {
+                            "music_genre_list": []
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 1683131,
+                        "track_name": "Probably Not My Type",
+                        "track_name_translation_list": [],
+                        "track_rating": 1,
+                        "commontrack_id": 3006465,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 10357071,
+                        "album_name": "Notes from Aboveground",
+                        "artist_id": 53275,
+                        "artist_name": "Augean Stables",
+                        "track_share_url": "https:\/\/www.musixmatch.com\/lyrics\/Augean-Stables\/Probably-Not-My-Type?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "track_edit_url": "https:\/\/www.musixmatch.com\/lyrics\/Augean-Stables\/Probably-Not-My-Type\/edit?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "restricted": 0,
+                        "updated_time": "2011-06-12T11:54:35Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 21,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Rock",
+                                        "music_genre_name_extended": "Rock",
+                                        "music_genre_vanity": "Rock"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 33504654,
+                        "track_name": "My Type (My Kind)",
+                        "track_name_translation_list": [],
+                        "track_rating": 1,
+                        "commontrack_id": 13386079,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 15456160,
+                        "album_name": "Gangster Love, Vol. 6",
+                        "artist_id": 195167,
+                        "artist_name": "Mr. Capone-E",
+                        "track_share_url": "https:\/\/www.musixmatch.com\/lyrics\/Mr-Capone-E\/My-Type-My-Kind?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "track_edit_url": "https:\/\/www.musixmatch.com\/lyrics\/Mr-Capone-E\/My-Type-My-Kind\/edit?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "restricted": 0,
+                        "updated_time": "2013-10-11T17:54:20Z",
+                        "primary_genres": {
+                            "music_genre_list": []
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 59025758,
+                        "track_name": "She's My Type",
+                        "track_name_translation_list": [],
+                        "track_rating": 1,
+                        "commontrack_id": 29587238,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 17698449,
+                        "album_name": "Nagka2ta Na Ba Kayo?",
+                        "artist_id": 26782770,
+                        "artist_name": "Jawtee featuring: Salbakuta",
+                        "track_share_url": "https:\/\/www.musixmatch.com\/lyrics\/Jawtee-featuring-Salbakuta\/She-s-My-Type?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "track_edit_url": "https:\/\/www.musixmatch.com\/lyrics\/Jawtee-featuring-Salbakuta\/She-s-My-Type\/edit?utm_source=application&utm_campaign=api&utm_medium=Selma%3A1409618531382",
+                        "restricted": 0,
+                        "updated_time": "2015-08-25T11:07:26Z",
+                        "primary_genres": {
+                            "music_genre_list": []
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
