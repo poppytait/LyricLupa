@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
+import Button from '@material-ui/core/Button'
 
 
 class SearchBar extends React.Component {
@@ -12,12 +13,15 @@ class SearchBar extends React.Component {
         this.state = {
             filterText: '',
         }
-
-        // this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
     }
     handleFilterTextChange = (event) => {
         this.setState({ filterText: event.target.value })
     }
+
+    handleOnClick = (event) => {
+        console.log('submitted')
+    }
+
     render() {
         return (
             <>
@@ -28,7 +32,9 @@ class SearchBar extends React.Component {
                             placeholder={this.props.placeholder}
                             value={this.state.filterText}
                             onChange={this.handleFilterTextChange}
+                            onSubmit={this.handleOnSubmit}
                         />
+                        <Button color='primary' onClick={this.handleOnClick}>Search</Button>
                     </Toolbar>
                 </AppBar>
                 <SearchResultsList />
