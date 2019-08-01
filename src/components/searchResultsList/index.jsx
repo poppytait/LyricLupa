@@ -8,25 +8,25 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 
-const SearchResultsList = () => {
+const SearchResultsList = ({ artist }) => {
     return (
         <>
-              <Typography variant="h6">
-                        Search Results List
+            <Typography variant="h6">
+                Search Results List
               </Typography>
-                    <List>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <FolderIcon />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary='Artist name'
-                                    secondary='Arist info'
-                                />
-                            </ListItem>
-                    </List>
+            <List>
+                <ListItem>
+                    <ListItemAvatar>
+                        <Avatar>
+                            <FolderIcon />
+                        </Avatar>
+                    </ListItemAvatar>
+                    <ListItemText
+                        primary={artist.name}
+                        secondary='Arist info'
+                    />
+                </ListItem>
+            </List>
         </>
     )
 }

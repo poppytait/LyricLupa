@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SearchResultsList from '../searchResultsList/index.jsx'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -6,35 +6,38 @@ import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
 
 
-class SearchBar extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            filterText: '',
-        }
+const SearchBar = props => {
+    const [searchValue, setSearchValue] = useState('');
 
-        // this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
+    const handleOnChange = e => {
+        setSearchValue(e.target.value)
     }
-    handleFilterTextChange = (event) => {
-        this.setState({ filterText: event.target.value })
+
+    const handleOnSubmit = e => {
+        e.preventDefault();
+        props.search(searchValue)
+        resetInputField();
     }
-    render() {
-        return (
-            <>
-                <AppBar position='static' color=''>
-                    <Toolbar>
-                        <SearchIcon />
-                        <InputBase
-                            placeholder={this.props.placeholder}
-                            value={this.state.filterText}
-                            onChange={this.handleFilterTextChange}
-                        />
-                    </Toolbar>
-                </AppBar>
-                <SearchResultsList />
-            </>
-        )
+
+    const resetInputField = () => {
+        setSearchValue('');
     }
+
+    return (
+        <form className="search">
+            <input
+                type='text'
+                onChange={handleOnChange}
+                value={searchValue}
+            />
+            <input
+                type='submit'
+                onSubmit={handleOnSubmit}
+                value='SEARCH'
+            />
+        </form>
+    );
 }
+
 
 export default SearchBar;
