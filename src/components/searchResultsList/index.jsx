@@ -8,7 +8,7 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 
-const SearchResultsList = ({ artist }) => {
+const SearchResultsList = () => {
     return (
         <>
             <Typography variant="h6">
@@ -22,7 +22,7 @@ const SearchResultsList = ({ artist }) => {
                         </Avatar>
                     </ListItemAvatar>
                     <ListItemText
-                        primary={artist.name}
+                        primary='artist name'
                         secondary='Arist info'
                     />
                 </ListItem>
