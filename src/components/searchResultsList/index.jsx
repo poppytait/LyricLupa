@@ -1,34 +1,31 @@
-import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import FolderIcon from '@material-ui/icons/Folder';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import ListItemText from '@material-ui/core/ListItemText';
-import Avatar from '@material-ui/core/Avatar';
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
+import { searchTrack } from '../../redux/actions/actions'
 
-const SearchResultsList = () => {
-    return (
-        <>
-            <Typography variant="h6">
-                Search Results List
-              </Typography>
-            <List>
-                <ListItem>
-                    <ListItemAvatar>
-                        <Avatar>
-                            <FolderIcon />
-                        </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText
-                        primary='artist name'
-                        secondary='Arist info'
-                    />
-                </ListItem>
-            </List>
-        </>
-    )
+const SearchResultsList = (props) => {
+  useEffect(() => {
+    props.dispatch(searchTrack())
+  }, [])
+
+  const { error, loading, tracks } = props;
+
+  if (error) return <div>Error! {error.message}</div>
+  if (loading) return <div>Loading...</div>
+
+  return (
+    <>
+      <div>Hiya</div>
+      <ul>
+        {tracks.map(({ track }) =>
+          <li key={track.track_id}>{track.track_name}</li>
+        )}
+      </ul>
+    </>
+  )
 }
 
-export default SearchResultsList;
+const mapStateToProps = state => (
+  state
+)
+
+export default connect(mapStateToProps)(SearchResultsList)
