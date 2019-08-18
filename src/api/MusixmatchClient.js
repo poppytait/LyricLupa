@@ -8,12 +8,11 @@ export default class MusixmatchClient {
     })
   }
 
-  search() {
+  search(searchQuery) {
     const MUSIXMATCH_API_KEY = '172d7a4352f4df9b2be9ec094a576346'
-    const SEARCH_BAR_QUERY = 'megan_thee_stallion'
     // axios.get wouldn't give access to the axios.create in the constructor. diff axios
     // you must RETURN something from a function if you want to access it outside the function
-    return this.axios.get(`/track.search?apikey=${MUSIXMATCH_API_KEY}&q=${SEARCH_BAR_QUERY}`)
+    return this.axios.get(`/track.search?apikey=${MUSIXMATCH_API_KEY}&q=${searchQuery}`)
       .then(({ data: { message } }) => message.body.track_list)
   }
 }
