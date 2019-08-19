@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
-import { connect } from 'react-redux'
-import { searchTrack } from '../../redux/actions/actions'
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { searchTrack } from "../../redux/actions/actions";
 
-const SearchResultsList = (props) => {
+const SearchResultsList = props => {
   // useEffect(() => {
   //   props.dispatch(searchTrack())
   // }, [])
@@ -23,13 +23,12 @@ const SearchResultsList = (props) => {
         <p>bonjour</p>
       </ul>
     </>
-  )
-}
+  );
+};
 
 // const mapStateToProps = state => (
 //   state
 // )
 
 // export default connect(mapStateToProps)(SearchResultsList)
-export default SearchResultsList
-
+export default SearchResultsList;
