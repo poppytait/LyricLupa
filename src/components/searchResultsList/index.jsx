@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { searchTrack } from "../../redux/actions/actions";
+import { searchTrack } from "../../redux/actions/searchTrackActions";
 
 const SearchResultsList = ({ error, loading, tracks, dispatch }) => {
   // if (error) return <div>Error! {error.message}</div>
@@ -20,4 +20,3 @@ const SearchResultsList = ({ error, loading, tracks, dispatch }) => {
 const mapStateToProps = state => state.trackReducer;
 
 export default connect(mapStateToProps)(SearchResultsList);
-// export default SearchResultsList;

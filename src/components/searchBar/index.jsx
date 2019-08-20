@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { searchTrack } from "../../redux/actions/actions";
+import { searchTrack } from "../../redux/actions/searchTrackActions";
 import { connect } from "react-redux";
 import DropdownSelect from "../DropdownSelect/index.jsx";
 
