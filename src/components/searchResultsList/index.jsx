@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { searchTrack } from "../../redux/actions/searchTrackActions";
 
-const SearchResultsList = ({ error, loading, tracks, dispatch }) => {
-  // if (error) return <div>Error! {error.message}</div>
-  // if (loading) return <div>Loading...</div>
+const SearchResultsList = ({ error, loading, tracks }) => {
+  if (error) return <div>Error! {error.message}</div>
+  if (loading) return <div>Loading...</div>
 
   return (
     <>
@@ -17,6 +17,9 @@ const SearchResultsList = ({ error, loading, tracks, dispatch }) => {
   );
 };
 
-const mapStateToProps = state => state.trackReducer;
+const mapStateToProps = state => {
+  console.log(state.tracks)
+  return state.tracks 
+};
 
 export default connect(mapStateToProps)(SearchResultsList);

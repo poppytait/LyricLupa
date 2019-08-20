@@ -7,11 +7,11 @@ import MusixmatchClient from "../../api/MusixmatchClient";
 
 const client = new MusixmatchClient();
 
-export function searchTrack(searchQuery) {
+export function searchTrack(query) {
   return dispatch => {
     dispatch(searchTrackBegin());
     return client
-      .search(searchQuery)
+      .search(query)
       .then(trackList => {
         dispatch(searchTrackSuccess(trackList));
         return trackList;

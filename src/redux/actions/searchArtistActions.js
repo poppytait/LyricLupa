@@ -3,9 +3,22 @@ import {
   SEARCH_ARTIST_SUCCESS,
   SEARCH_ARTIST_FAILURE
 } from "../actions/action-types";
+import MusixmatchClient from "../../api/MusixmatchClient";
 
-export function searchArtist() {
-  return dispatch => {};
+
+const client = new MusixmatchClient();
+
+export function searchArtist(query) {
+  return dispatch => {
+    dispatch(searchArtistBegin());
+    return client
+      .search(query)
+      .then(artistList => {
+        dispatch(searchArtistSuccess(artistList))
+        return artistList;
+      })
+      .catch(error => dispatch(searchArtistFailure(error)));
+  };
 }
 
 export const searchArtistBegin = () => ({

@@ -3,14 +3,14 @@ import { searchTrack } from "../../redux/actions/searchTrackActions";
 import { connect } from "react-redux";
 import DropdownSelect from "../DropdownSelect/index.jsx";
 
-const SearchBar = ({ error, loading, tracks, dispatch }) => {
+const SearchBar = ({ dispatch }) => {
   const [searchValue, setSearchValue] = useState("");
 
   const handleOnChange = e => {
     setSearchValue(e.target.value);
   };
 
-  const handleOnSubmit = (e, props) => {
+  const handleOnSubmit = e => {
     e.preventDefault();
     console.log("return of the lights");
     resetInputField();
