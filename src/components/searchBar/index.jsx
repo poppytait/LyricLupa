@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { searchTrack } from "../../redux/actions/actions";
 import { connect } from "react-redux";
+import DropdownSelect from "../DropdownSelect/index.jsx";
 
 const SearchBar = ({ error, loading, tracks, dispatch }) => {
   const [searchValue, setSearchValue] = useState("");
@@ -29,16 +30,11 @@ const SearchBar = ({ error, loading, tracks, dispatch }) => {
 
   return (
     <>
+      <DropdownSelect />
       <form onSubmit={handleOnSubmit}>
         <input type="text" onChange={handleOnChange} value={searchValue} />
         <input type="button" value="redux" onClick={dispatchSearchTrack} />
       </form>
-
-      <ul>
-        {tracks.map(({ track }) => (
-          <li key={track.track_id}>{track.track_name}</li>
-        ))}
-      </ul>
     </>
   );
 };

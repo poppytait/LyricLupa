@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { searchTrack } from "../../redux/actions/actions";
 
-const SearchResultsList = props => {
+const SearchResultsList = ({ error, loading, tracks, dispatch }) => {
   // useEffect(() => {
   //   props.dispatch(searchTrack())
   // }, [])
@@ -17,18 +17,15 @@ const SearchResultsList = props => {
   return (
     <>
       <ul>
-        {/* {tracks.map(({ track }) =>
+        {tracks.map(({ track }) => (
           <li key={track.track_id}>{track.track_name}</li>
-        )} */}
-        <p>bonjour</p>
+        ))}
       </ul>
     </>
   );
 };
 
-// const mapStateToProps = state => (
-//   state
-// )
+const mapStateToProps = state => state;
 
-// export default connect(mapStateToProps)(SearchResultsList)
-export default SearchResultsList;
+export default connect(mapStateToProps)(SearchResultsList);
+// export default SearchResultsList;
