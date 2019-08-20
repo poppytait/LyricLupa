@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { searchTrack } from "../../redux/actions/actions";
 import { connect } from "react-redux";
 import DropdownSelect from "../DropdownSelect/index.jsx";
 
 const SearchBar = ({ error, loading, tracks, dispatch }) => {
   const [searchValue, setSearchValue] = useState("");
-
-  // if (error) return <div>Error! {error.message}</div>;
-  // if (loading) return <div>Loading...</div>;
 
   const handleOnChange = e => {
     setSearchValue(e.target.value);
@@ -39,6 +36,6 @@ const SearchBar = ({ error, loading, tracks, dispatch }) => {
   );
 };
 
-const mapStateToProps = state => state;
+const mapStateToProps = state => state.trackReducer;
 
 export default connect(mapStateToProps)(SearchBar);
