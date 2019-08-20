@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { searchTrack } from "../../redux/actions/actions";
 import { connect } from "react-redux";
 
-const SearchBar = ({ error, loading, tracks }) => {
+const SearchBar = ({ error, loading, tracks, dispatch }) => {
   const [searchValue, setSearchValue] = useState("");
 
   // if (error) return <div>Error! {error.message}</div>;
@@ -23,7 +23,7 @@ const SearchBar = ({ error, loading, tracks }) => {
   };
 
   const dispatchSearchTrack = () => {
-    const results = props.dispatch(searchTrack(searchValue));
+    const results = dispatch(searchTrack(searchValue));
     console.log(results);
   };
 
