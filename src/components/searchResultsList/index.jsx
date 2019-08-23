@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { searchTrack } from "../../redux/actions/searchTrackActions";
+import { search } from "../../redux/actions/searchTrackActionCreator";
 
-const SearchResultsList = ({ error, loading, tracks }) => {
-  if (error) return <div>Error! {error.message}</div>
-  if (loading) return <div>Loading...</div>
+const SearchResultsList = ({ error, loading, tracks, searchCategory }) => {
+  if (error) return <div>Error! {error.message}</div>;
+  if (loading) return <div>Loading...</div>;
 
   return (
     <>
@@ -18,8 +18,10 @@ const SearchResultsList = ({ error, loading, tracks }) => {
 };
 
 const mapStateToProps = state => {
-  console.log(state.tracks)
-  return state.tracks 
+  return {
+    tracks: state.tracks.tracks,
+    searchCategory: state.searchCategory.searchCategory
+  };
 };
 
 export default connect(mapStateToProps)(SearchResultsList);

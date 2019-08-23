@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
 import trackReducer from "./trackReducer";
-import artistReducer from './artistReducer'
+import artistReducer from "./artistReducer";
+import searchCategoryReducer from "../reducers/searchCategory/index";
 
 const rootReducer = combineReducers({
   tracks: trackReducer,
-  artists: artistReducer
+  artists: artistReducer,
+  searchCategory: searchCategoryReducer
 });
 
 export default rootReducer;

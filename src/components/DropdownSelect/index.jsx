@@ -1,13 +1,11 @@
 import React from "react";
 
-const DropdownSelect = () => {
+const DropdownSelect = ({ onSelect }) => {
   return (
     <>
-      <select>
+      <select onChange={onSelect}>
         <option value="track">Track</option>
         <option value="artist">Artist</option>
-        <option value="lyrics">Lyrics</option>
-        <option value="album">Album</option>
       </select>
     </>
   );

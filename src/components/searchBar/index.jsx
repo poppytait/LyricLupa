@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { searchTrack } from "../../redux/actions/searchTrackActions";
+import { search } from "../../redux/actions/searchTrackActionCreator";
 import { connect } from "react-redux";
 import DropdownSelect from "../DropdownSelect/index.jsx";
+import { toggleSearchCategory } from "../../redux/actions/searchCategory";
 
-const SearchBar = ({ dispatch }) => {
-  const [searchValue, setSearchValue] = useState("");
+const SearchBar = ({ dispatch, searchCategory }) => {
+  const [query, setQuery] = useState("");
 
   const handleOnChange = e => {
-    setSearchValue(e.target.value);
+    setQuery(e.target.value);
   };
 
   const handleOnSubmit = e => {
@@ -17,25 +18,33 @@ const SearchBar = ({ dispatch }) => {
   };
 
   const resetInputField = () => {
-    setSearchValue("");
+    setQuery("");
   };
 
   const dispatchSearchTrack = () => {
-    const results = dispatch(searchTrack(searchValue));
-    console.log(results);
+    console.log(searchCategory);
+    dispatch(search(query, searchCategory));
+  };
+
+  const handleSearchCategorySelect = e => {
+    dispatch(toggleSearchCategory(e.target.value));
   };
 
   return (
     <>
-      <DropdownSelect />
+      <DropdownSelect onSelect={handleSearchCategorySelect} />
       <form onSubmit={handleOnSubmit}>
-        <input type="text" onChange={handleOnChange} value={searchValue} />
+        <input type="text" onChange={handleOnChange} value={query} />
         <input type="button" value="redux" onClick={dispatchSearchTrack} />
       </form>
     </>
   );
 };
 
-const mapStateToProps = state => state.trackReducer;
+const mapStateToProps = state => {
+  return {
+    searchCategory: state.searchCategory.searchCategory
+  };
+};
 
 export default connect(mapStateToProps)(SearchBar);
