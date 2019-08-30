@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { search } from "../../redux/actions/searchTrackActionCreator";
 
 const SearchResultsList = ({ error, loading, tracks, searchCategory }) => {
   if (error) return <div>Error! {error.message}</div>;
